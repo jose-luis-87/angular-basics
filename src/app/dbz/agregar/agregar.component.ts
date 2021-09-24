@@ -6,6 +6,7 @@ import { DbzService } from '../services/dbz.service';
   selector: 'app-agregar',
   templateUrl: './agregar.component.html'
 })
+
 export class AgregarComponent {
 
   @Input() nuevo: Personaje = {
@@ -13,9 +14,7 @@ export class AgregarComponent {
     poder: 0
   }
 
-  constructor( private dbzService: DbzService ){
-
-  }
+  constructor( private dbzService: DbzService ){}
   //@Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter()
 
   agregar(){

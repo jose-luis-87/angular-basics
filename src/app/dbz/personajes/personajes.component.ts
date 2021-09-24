@@ -6,11 +6,13 @@ import { DbzService } from '../services/dbz.service';
   selector: 'app-personajes',
   templateUrl: './personajes.component.html'
 })
+
 export class PersonajesComponent {
+
+ constructor( private dbzService: DbzService){}
 
  get personajes():Personaje[]{
     return this.dbzService.personajes
  }
- constructor( private dbzService: DbzService){}
 
 }

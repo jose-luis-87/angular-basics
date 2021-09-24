@@ -21,7 +21,7 @@ export class DbzService{
     }
     
     constructor(){
-        console.log('servicio arriba');
+        console.log( 'servicio arriba' );
     }
 
     agregarPersonaje( personaje: Personaje ){
